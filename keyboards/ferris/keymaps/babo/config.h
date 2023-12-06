@@ -7,6 +7,8 @@
 // default but important
 #undef TAPPING_TERM
 #define TAPPING_TERM 170
+#undef COMBO_TERM
+#define COMBO_TERM 170
 
 #define PERMISSIVE_HOLD
 
