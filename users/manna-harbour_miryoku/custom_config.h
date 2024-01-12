@@ -5,3 +5,6 @@
 
 #pragma once
 
+#define MIRYOKU_ALPHAS_DEFAULT
+#define MIRYOKU_CLIPBOARD_MAC
+#define MIRYOKU_EXTRA_APTV5
