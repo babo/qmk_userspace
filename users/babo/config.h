@@ -1,8 +1,8 @@
 #pragma once
 
 // default but important
-#undef TAPPING_TERM
-#define TAPPING_TERM 170
+//#undef TAPPING_TERM
+//#define TAPPING_TERM 170
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 #define QUICK_TAP_TERM 0
