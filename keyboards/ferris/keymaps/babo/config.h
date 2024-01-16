@@ -7,10 +7,13 @@
 // default but important
 #undef TAPPING_TERM
 #define TAPPING_TERM 190
-#undef COMBO_TERM
-#define COMBO_TERM 190
 
 #define PERMISSIVE_HOLD
+
+#define MIRYOKU_KLUDGE_THUMBCOMBOS 'yes'
+#define COMBO_COUNT 8
+#define COMBO_TERM 200
+#define EXTRA_SHORT_COMBOS
 
 #define LAYOUT_miryoku( \
        K00,   K01,   K02,   K03,   K04,   K05,   K06,   K07,   K08,   K09, \
