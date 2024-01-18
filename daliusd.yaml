@@ -1,0 +1,183 @@
+layout: {qmk_keyboard: ferris/sweep, qmk_layout: LAYOUT}
+layers:
+  L0: [Q, W, F, P, B, J, L, U, Y, '''', A, R, S, T, G, M, N, E, I, O, Z, X, C, D, V, K, H, ',', ., /, MO( NAV), SPC, LSFT, MO( SYM)]
+  L1:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - ''
+  - '`'
+  - '['
+  - ']'
+  - +
+  - '-'
+  - '|'
+  - RCTL
+  - RGUI
+  - RALT
+  - DEL
+  - BSPC
+  - '{'
+  - '}'
+  - '='
+  - _
+  - ''''
+  - '"'
+  - OS MISC
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  L2:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - LALT
+  - LGUI
+  - LCTL
+  - TAB
+  - ENT
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - PGUP
+  - LSFT
+  - BSPC
+  - ESC
+  - '~'
+  - OS TMUX
+  - OS FUNC
+  - MO( MOUSE)
+  - ','
+  - .
+  - PGDN
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  L3: [QK BOOT, '', '', '', '', BRID, BRIU, PSCR, NO(QK LCTL | QK LSFT | QK LGUI | 4), '', '', DB TOGG, LT OSLNX, '', MPRV, MPLY, MNXT, NO(QK LSFT | QK LGUI | 5),
+    '', '', '', '', '', VOLD, VOLU, '', '', '', '', '', '', '']
+  L4: ['', '', '', '', '', '', TM URL, '', '', '', '', '', '', '', '', TM LEFT, TM NEXT, TM PREV, TM RIGHT, '', '', '', '', '', '', TM NEW, TM SLCT, '', '', TM SRCH,
+    '', '', '', '']
+  L5:
+  - ''
+  - ''
+  - MS U
+  - BTN3
+  - WH U
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MS L
+  - MS D
+  - MS R
+  - WH D
+  - ''
+  - ''
+  - RCTL
+  - RGUI
+  - RALT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BTN1
+  - BTN2
+  - {t: ▽, type: trans}
+  - ''
+  L6: [F1, F2, F3, F4, F5, '', '', '', '', '', F6, F7, F8, F9, F10, '', '', RCTL, RGUI, RALT, F11, F12, '', '', '', '', '', '', '', '', '', '', '', '']
+  L7:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - +
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '='
+  - ''
+  - ''
+  - BSPC
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  L8:
+  - UM(LT L A)
+  - UM(LT L C)
+  - UM(LT L E1)
+  - UM(LT L E2)
+  - UM(LT L I)
+  - UM(LT L S)
+  - UM(LT L U1)
+  - UM(LT L U2)
+  - UM(LT L Z)
+  - ''
+  - UP(LT S A, LT L A)
+  - UP(LT S C, LT L C)
+  - UP(LT S E1, LT L E1)
+  - UP(LT S E2, LT L E2)
+  - UP(LT S I, LT L I)
+  - UP(LT S S, LT L S)
+  - UP(LT S U1, LT L U1)
+  - UP(LT S U2, LT L U2)
+  - UP(LT S Z, LT L Z)
+  - ''
+  - ''
+  - BSPC
+  - ''
+  - UM(SNEK)
+  - UM(LT OB)
+  - UM(LT CB)
+  - UM(EURO)
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
