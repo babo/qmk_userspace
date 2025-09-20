@@ -22,7 +22,7 @@
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 enum layers {
-    _COLEMAK_DH,
+    _GALLIUM,
     _SYM,
     _NAV,
     _MISC,
@@ -31,6 +31,7 @@ enum layers {
     _FUNC,
     _LT_MAC,
     _LT_LINUX,
+    _COLEMAK_DH,
 };
 
 enum custom_keycodes {
@@ -151,6 +152,17 @@ const uint32_t unicode_map[] PROGMEM = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
+    [_GALLIUM] = LAYOUT(
+    //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
+       KC_B    ,KC_L    ,KC_D    ,KC_C    ,KC_V,                              KC_Z    ,KC_Y    ,KC_O    ,KC_U    ,KC_COMM,
+    //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
+       KC_N    ,KC_R    ,KC_T    ,KC_S    ,KC_G    ,                          KC_P    ,KC_H    ,KC_A    ,KC_E    ,KC_I    ,
+    //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
+       KC_Q    ,KC_X    ,KC_M    ,KC_W    ,KC_J    ,                          KC_K    ,KC_F    ,KC_QUOT,KC_SLSH ,KC_DOT,
+    //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
+                                       KC_SPC  ,    L_NAV   ,        L_SYM   ,    KC_LSFT
+    //                                └────────┘   └────────┘       └────────┘   └────────┘
+    ),
   [_COLEMAK_DH] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
      KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B,                              KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_QUOT ,
