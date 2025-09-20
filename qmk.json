@@ -1,4 +1,7 @@
 {
     "userspace_version": "1.1",
-    "build_targets": [["ferris/sweep", "daliusd"]]
+    "build_targets": [
+        ["ferris/sweep", "daliusd"],
+        ["ferris/sweep", "babo"]
+    ]
 }
