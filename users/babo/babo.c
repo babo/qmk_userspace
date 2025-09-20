@@ -1,7 +1,7 @@
 #include "hungarian.h"
 #include "config.h"
 
-#ifdef LAYOUT_miryoku
+#if defined (LAYOUT_miryoku)
 #include "users/manna-harbour_miryoku/manna-harbour_miryoku.c"
 #endif
 
