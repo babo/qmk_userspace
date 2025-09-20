@@ -57,19 +57,19 @@
   //                                └────────┘   └────────┘       └────────┘   └────────┘
   )
 
-// GALLIUM layout
+// GALLIUM layout with XQ and JZ swap
 //### gallium
-//bldcv  zyou,
+//bldcv  jyou,
 //nrtsg  phaei
-//qxmwj  kf';.
+//xqmwz  kf';.
 
   [_GALLIUM] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     KC_B    ,KC_L    ,KC_D    ,KC_C    ,KC_V,                              KC_Z    ,KC_Y    ,KC_O    ,KC_U    ,KC_COMM,
+     KC_B    ,KC_L    ,KC_D    ,KC_C    ,KC_V,                              KC_J    ,KC_Y    ,KC_O    ,KC_U    ,KC_COMM,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      KC_N    ,KC_R    ,KC_T    ,KC_S    ,KC_G    ,                          KC_P    ,KC_H    ,KC_A    ,KC_E    ,KC_I    ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_Q    ,KC_X    ,KC_M    ,KC_W    ,KC_J    ,                          KC_K    ,KC_F    ,KC_QUOT,KC_SLSH ,KC_DOT,
+     KC_X    ,KC_Q    ,KC_M    ,KC_W    ,KC_Z    ,                          KC_K    ,KC_F    ,KC_QUOT,KC_SLSH ,KC_DOT,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
                                      KC_SPC  ,    L_NAV   ,        L_SYM   ,    KC_LSFT
   //                                └────────┘   └────────┘       └────────┘   └────────┘
