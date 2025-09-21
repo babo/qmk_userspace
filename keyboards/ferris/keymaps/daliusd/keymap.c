@@ -187,15 +187,15 @@ const uint32_t unicode_map[] PROGMEM = {
 #define K_LT_OB     UM(LT_OB)
 #define K_LT_CB     UM(LT_CB)
 
-#define HU_AAC      XP(HU_a_AC, HU_A_AC)
-#define HU_EAC      XP(HU_e_AC, HU_E_AC)
-#define HU_IAC      XP(HU_i_AC, HU_I_AC)
-#define HU_OAC      XP(HU_o_AC, HU_O_AC)
-#define HU_ODA      XP(HU_o_DA, HU_O_DA)
-#define HU_ODI      XP(HU_o_DI, HU_O_DI)
-#define HU_UAC      XP(HU_u_AC, HU_U_AC)
-#define HU_UDA      XP(HU_u_DA, HU_U_DA)
-#define HU_UDI      XP(HU_u_DI, HU_U_DI)
+#define HU_AAC      UP(HU_a_AC, HU_A_AC)
+#define HU_EAC      UP(HU_e_AC, HU_E_AC)
+#define HU_IAC      UP(HU_i_AC, HU_I_AC)
+#define HU_OAC      UP(HU_o_AC, HU_O_AC)
+#define HU_ODA      UP(HU_o_DA, HU_O_DA)
+#define HU_ODI      UP(HU_o_DI, HU_O_DI)
+#define HU_UAC      UP(HU_u_AC, HU_U_AC)
+#define HU_UDA      UP(HU_u_DA, HU_U_DA)
+#define HU_UDI      UP(HU_u_DI, HU_U_DI)
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

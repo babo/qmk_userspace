@@ -53,15 +53,15 @@ const uint32_t PROGMEM unicode_map[] = {
     [u_DI] = 0x00FC,
 };
 
-#define AAC XP(a_AC, A_AC)
-#define EAC XP(e_AC, E_AC)
-#define IAC XP(i_AC, I_AC)
-#define OAC XP(o_AC, O_AC)
-#define ODA XP(o_DA, O_DA)
-#define ODI XP(o_DI, O_DI)
-#define UAC XP(u_AC, U_AC)
-#define UDA XP(u_DA, U_DA)
-#define UDI XP(u_DI, U_DI)
+#define AAC UP(a_AC, A_AC)
+#define EAC UP(e_AC, E_AC)
+#define IAC UP(i_AC, I_AC)
+#define OAC UP(o_AC, O_AC)
+#define ODA UP(o_DA, O_DA)
+#define ODI UP(o_DI, O_DI)
+#define UAC UP(u_AC, U_AC)
+#define UDA UP(u_DA, U_DA)
+#define UDI UP(u_DI, U_DI)
 
 #define OS_LSFT OSM(MOD_LSFT)
 #define OS_RSFT OSM(MOD_RSFT)
