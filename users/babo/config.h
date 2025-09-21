@@ -27,3 +27,15 @@
 #define MIRYOKU_ALPHAS_DEFAULT
 #define MIRYOKU_CLIPBOARD_MAC
 #define MIRYOKU_EXTRA_GALLIUM
+
+#ifndef MS_BTN1
+#define MS_BTN1 KC_BTN1
+#endif
+
+#ifndef MS_BTN2
+#define MS_BTN2 KC_BTN2
+#endif
+
+#ifndef MS_BTN3
+#define MS_BTN3 KC_BTN3
+#endif
