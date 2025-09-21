@@ -99,6 +99,24 @@ enum unicode_names {
     LT_L_Z,
     LT_OB,
     LT_CB,
+    HU_A_AC,
+    HU_E_AC,
+    HU_I_AC,
+    HU_O_AC,
+    HU_O_DA,
+    HU_O_DI,
+    HU_U_AC,
+    HU_U_DA,
+    HU_U_DI,
+    HU_a_AC,
+    HU_e_AC,
+    HU_i_AC,
+    HU_o_AC,
+    HU_o_DA,
+    HU_o_DI,
+    HU_u_AC,
+    HU_u_DA,
+    HU_u_DI,
 };
 
 const uint32_t unicode_map[] PROGMEM = {
@@ -124,6 +142,26 @@ const uint32_t unicode_map[] PROGMEM = {
     [LT_L_Z] = 0x17d, // Ž
     [LT_OB] = 0x201e, // „
     [LT_CB] = 0x201c, // “
+
+    [HU_A_AC] = 0x00C1,
+    [HU_E_AC] = 0x00C9,
+    [HU_I_AC] = 0x00CD,
+    [HU_O_AC] = 0x00D3,
+    [HU_O_DA] = 0x0150,
+    [HU_O_DI] = 0x00D6,
+    [HU_U_AC] = 0x00DA,
+    [HU_U_DA] = 0x0170,
+    [HU_U_DI] = 0x00DC,
+
+    [HU_a_AC] = 0x00E1,
+    [HU_e_AC] = 0x00E9,
+    [HU_i_AC] = 0x00ED,
+    [HU_o_AC] = 0x00F3,
+    [HU_o_DA] = 0x0151,
+    [HU_o_DI] = 0x00F6,
+    [HU_u_AC] = 0x00FA,
+    [HU_u_DA] = 0x0171,
+    [HU_u_DI] = 0x00FC,
 };
 
 #define K_SNEK      UM(SNEK)
@@ -148,6 +186,17 @@ const uint32_t unicode_map[] PROGMEM = {
 #define K_LT_ZU     UM(LT_L_Z)
 #define K_LT_OB     UM(LT_OB)
 #define K_LT_CB     UM(LT_CB)
+
+#define HU_AAC      XP(HU_a_AC, HU_A_AC)
+#define HU_EAC      XP(HU_e_AC, HU_E_AC)
+#define HU_IAC      XP(HU_i_AC, HU_I_AC)
+#define HU_OAC      XP(HU_o_AC, HU_O_AC)
+#define HU_ODA      XP(HU_o_DA, HU_O_DA)
+#define HU_ODI      XP(HU_o_DI, HU_O_DI)
+#define HU_UAC      XP(HU_u_AC, HU_U_AC)
+#define HU_UDA      XP(HU_u_DA, HU_U_DA)
+#define HU_UDI      XP(HU_u_DI, HU_U_DI)
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
