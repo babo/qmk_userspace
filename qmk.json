@@ -1,7 +1,6 @@
 {
     "userspace_version": "1.1",
     "build_targets": [
-        ["ferris/sweep", "daliusd"],
-        ["massdrop/alt", "babo"]
+        ["ferris/sweep", "daliusd"]
     ]
 }
