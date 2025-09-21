@@ -31,7 +31,6 @@ enum layers {
     _FUNC,
     _LT_MAC,
     _LT_LINUX,
-    _COLEMAK_DH,
 };
 
 enum custom_keycodes {
@@ -163,17 +162,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                      KC_SPC  ,    L_NAV   ,        L_SYM   ,    KC_LSFT
   //                                └────────┘   └────────┘       └────────┘   └────────┘
   ),
-  [_COLEMAK_DH] = LAYOUT(
-  //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B,                              KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_QUOT ,
-  //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_A    ,KC_R    ,KC_S    ,KC_T    ,KC_G    ,                          KC_M    ,KC_N    ,KC_E    ,KC_I    ,KC_O    ,
-  //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_Z    ,KC_X    ,KC_C    ,KC_D    ,KC_V    ,                          KC_K    ,KC_H    ,KC_COMM ,KC_DOT  ,KC_SLSH,
-  //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
-                                     KC_SPC  ,    L_NAV   ,        L_SYM   ,    KC_LSFT
-  //                                └────────┘   └────────┘       └────────┘   └────────┘
-  ),
 
   [_SYM] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
@@ -201,9 +189,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MISC] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     QK_BOOT ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          KC_BRID ,KC_BRIU ,KC_PSCR ,XXXXXXX ,K_PRINT ,
+     QK_BOOT ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          KC_BRID ,KC_BRIU ,KC_PSCR ,XXXXXXX ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,XXXXXXX ,DB_TOGG ,LT_OSLNX,XXXXXXX ,                          KC_MPRV ,KC_MPLY ,KC_MNXT ,XXXXXXX ,K_VIDEO ,
+     XXXXXXX ,XXXXXXX ,DB_TOGG ,LT_OSLNX,XXXXXXX ,                          KC_MPRV ,KC_MPLY ,KC_MNXT ,XXXXXXX ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          KC_VOLD ,KC_VOLU ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
