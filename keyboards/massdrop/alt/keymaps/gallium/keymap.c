@@ -6,11 +6,6 @@ enum alt_keycodes {
     MD_BOOT  = SAFE_RANGE,               //Restart into bootloader after hold timeout
 };
 
-//### gallium
-//bldcv  jyou,
-//nrtsg  phaei
-//xqmwz  kf'/.
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_65_ansi_blocker(
         KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC, KC_CAPS,
@@ -27,6 +22,48 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______,                            _______,                            _______, _______, KC_HOME, KC_PGDN, KC_END
     )
 };
+
+
+// EEPROM storage mode
+enum alt_rgb_mode {
+    RGB_MODE_ALL,
+    RGB_MODE_KEYLIGHT,
+    RGB_MODE_UNDERGLOW,
+    RGB_MODE_NONE,
+};
+
+// EEPROM storage type
+typedef union {
+    uint32_t raw;
+    struct {
+        uint8_t rgb_mode :8;
+    };
+} alt_config_t;
+
+alt_config_t alt_config;
+
+// Read from EEPROM on init to load the last saved mode
+void keyboard_post_init_kb(void) {
+    alt_config.raw = eeconfig_read_user();
+    switch (alt_config.rgb_mode) {
+        case RGB_MODE_ALL:
+            rgb_matrix_set_flags(LED_FLAG_ALL);
+            rgb_matrix_enable_noeeprom();
+            break;
+        case RGB_MODE_KEYLIGHT:
+            rgb_matrix_set_flags(LED_FLAG_KEYLIGHT);
+            rgb_matrix_set_color_all(0, 0, 0);
+            break;
+        case RGB_MODE_UNDERGLOW:
+            rgb_matrix_set_flags(LED_FLAG_UNDERGLOW);
+            rgb_matrix_set_color_all(0, 0, 0);
+            break;
+        case RGB_MODE_NONE:
+            rgb_matrix_set_flags(LED_FLAG_NONE);
+            rgb_matrix_disable_noeeprom();
+            break;
+    }
+}
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     static uint32_t key_timer;
