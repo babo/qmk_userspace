@@ -20,7 +20,7 @@ enum unicode_names {
     u_DA,
     u_DI,
 };
-U
+
 #define AAC UP(a_AC, A_AC)
 #define EAC UP(e_AC, E_AC)
 #define IAC UP(i_AC, I_AC)
