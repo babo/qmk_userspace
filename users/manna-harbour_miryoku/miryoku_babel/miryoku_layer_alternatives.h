@@ -38,12 +38,6 @@ LGUI_T(KC_R),      LALT_T(KC_S),      LCTL_T(KC_N),      LSFT_T(KC_T),      KC_P
 LT(U_BUTTON,KC_Q), ALGR_T(KC_W),      KC_M,              KC_G,              KC_B,              KC_J,              KC_D,              KC_COMM,           ALGR_T(KC_DOT),    LT(U_BUTTON,KC_SLSH),\
 U_NP,              U_NP,              LT(U_FUN,KC_DEL),  LT(U_NUM,KC_BSPC), LT(U_SYM,KC_ENT),  LT(U_MOUSE,KC_TAB),LT(U_NAV,KC_SPC),  LT(U_MEDIA,KC_ESC),U_NP,              U_NP
 
-#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM_FLIP \
-KC_B,              KC_L,              KC_D,              KC_C,              KC_V,              KC_J,              KC_Y,              KC_O,              KC_U,              KC_COMM,           \
-LGUI_T(KC_N),      LALT_T(KC_R),      LCTL_T(KC_T),      LSFT_T(KC_S),      KC_G,              KC_P,              LSFT_T(KC_H),      LCTL_T(KC_A),      LALT_T(KC_E),      LGUI_T(KC_I),      \
-LT(U_BUTTON,KC_X), ALGR_T(KC_Q),      KC_M,              KC_W,              KC_Z,              KC_K,              KC_F,              KC_QUOT,           ALGR_T(KC_SLSH),   LT(U_BUTTON,KC_DOT),\
-U_NP,              U_NP,              LT(U_FUN,KC_DEL),  LT(U_NUM,KC_BSPC), LT(U_SYM,KC_ENT),  LT(U_MOUSE,KC_TAB),LT(U_NAV,KC_SPC),  LT(U_MEDIA,KC_ESC),U_NP,              U_NP
-
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP \
 KC_Q,              KC_H,              KC_O,              KC_U,              KC_X,              KC_G,              KC_C,              KC_R,              KC_F,              KC_Z,              \
 LGUI_T(KC_Y),      LALT_T(KC_I),      LCTL_T(KC_E),      LSFT_T(KC_A),      KC_DOT,            KC_D,              LSFT_T(KC_S),      LCTL_T(KC_T),      LALT_T(KC_N),      LGUI_T(KC_B),      \
@@ -126,12 +120,6 @@ U_NP,              U_NP,              LT(U_MEDIA,KC_ESC),LT(U_NAV,KC_SPC),  LT(U
 KC_X,              KC_C,              KC_L,              KC_F,              KC_V,              KC_Z,              KC_Y,              KC_O,              KC_U,              KC_QUOT,           \
 LGUI_T(KC_R),      LALT_T(KC_S),      LCTL_T(KC_N),      LSFT_T(KC_T),      KC_P,              KC_K,              LSFT_T(KC_H),      LCTL_T(KC_E),      LALT_T(KC_I),      LGUI_T(KC_A),      \
 LT(U_BUTTON,KC_Q), ALGR_T(KC_W),      KC_M,              KC_G,              KC_B,              KC_J,              KC_D,              KC_COMM,           ALGR_T(KC_DOT),    LT(U_BUTTON,KC_SLSH),\
-U_NP,              U_NP,              LT(U_MEDIA,KC_ESC),LT(U_NAV,KC_SPC),  LT(U_MOUSE,KC_TAB),LT(U_SYM,KC_ENT),  LT(U_NUM,KC_BSPC), LT(U_FUN,KC_DEL),  U_NP,              U_NP
-
-#define MIRYOKU_ALTERNATIVES_BASE_GALLIUM \
-KC_B,              KC_L,              KC_D,              KC_C,              KC_V,              KC_J,              KC_Y,              KC_O,              KC_U,              KC_COMM,           \
-LGUI_T(KC_N),      LALT_T(KC_R),      LCTL_T(KC_T),      LSFT_T(KC_S),      KC_G,              KC_P,              LSFT_T(KC_H),      LCTL_T(KC_A),      LALT_T(KC_E),      LGUI_T(KC_I),      \
-LT(U_BUTTON,KC_X), ALGR_T(KC_Q),      KC_M,              KC_W,              KC_Z,              KC_K,              KC_F,              KC_QUOT,           ALGR_T(KC_SLSH),   LT(U_BUTTON,KC_DOT),\
 U_NP,              U_NP,              LT(U_MEDIA,KC_ESC),LT(U_NAV,KC_SPC),  LT(U_MOUSE,KC_TAB),LT(U_SYM,KC_ENT),  LT(U_NUM,KC_BSPC), LT(U_FUN,KC_DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_BEAKL15 \
@@ -219,12 +207,6 @@ KC_R,              KC_S,              KC_N,              KC_T,              KC_P
 KC_Q,              KC_W,              KC_M,              KC_G,              KC_B,              KC_J,              KC_D,              KC_COMM,           KC_DOT,            KC_SLSH,           \
 U_NP,              U_NP,              KC_DEL,            KC_BSPC,           KC_ENT,            KC_TAB,            KC_SPC,            KC_ESC,            U_NP,              U_NP
 
-#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM_FLIP \
-KC_B,              KC_L,              KC_D,              KC_C,              KC_V,              KC_J,              KC_Y,              KC_O,              KC_U,              KC_COMM,           \
-KC_N,              KC_R,              KC_T,              KC_S,              KC_G,              KC_P,              KC_H,              KC_A,              KC_E,              KC_I,              \
-KC_X,              KC_Q,              KC_M,              KC_W,              KC_Z,              KC_K,              KC_F,              KC_QUOT,           KC_SLSH,           KC_DOT,            \
-U_NP,              U_NP,              KC_DEL,            KC_BSPC,           KC_ENT,            KC_TAB,            KC_SPC,            KC_ESC,            U_NP,              U_NP
-
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15_FLIP \
 KC_Q,              KC_H,              KC_O,              KC_U,              KC_X,              KC_G,              KC_C,              KC_R,              KC_F,              KC_Z,              \
 KC_Y,              KC_I,              KC_E,              KC_A,              KC_DOT,            KC_D,              KC_S,              KC_T,              KC_N,              KC_B,              \
@@ -307,12 +289,6 @@ U_NP,              U_NP,              KC_ESC,            KC_SPC,            KC_T
 KC_X,              KC_C,              KC_L,              KC_F,              KC_V,              KC_Z,              KC_Y,              KC_O,              KC_U,              KC_QUOT,           \
 KC_R,              KC_S,              KC_N,              KC_T,              KC_P,              KC_K,              KC_H,              KC_E,              KC_I,              KC_A,              \
 KC_Q,              KC_W,              KC_M,              KC_G,              KC_B,              KC_J,              KC_D,              KC_COMM,           KC_DOT,            KC_SLSH,           \
-U_NP,              U_NP,              KC_ESC,            KC_SPC,            KC_TAB,            KC_ENT,            KC_BSPC,           KC_DEL,            U_NP,              U_NP
-
-#define MIRYOKU_ALTERNATIVES_TAP_GALLIUM \
-KC_B,              KC_L,              KC_D,              KC_C,              KC_V,              KC_J,              KC_Y,              KC_O,              KC_U,              KC_COMM,           \
-KC_N,              KC_R,              KC_T,              KC_S,              KC_G,              KC_P,              KC_H,              KC_A,              KC_E,              KC_I,              \
-KC_X,              KC_Q,              KC_M,              KC_W,              KC_Z,              KC_K,              KC_F,              KC_QUOT,           KC_SLSH,           KC_DOT,            \
 U_NP,              U_NP,              KC_ESC,            KC_SPC,            KC_TAB,            KC_ENT,            KC_BSPC,           KC_DEL,            U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_TAP_BEAKL15 \
@@ -402,34 +378,34 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP \
-KC_WH_U,           KC_WH_L,           KC_MS_U,           KC_WH_R,           U_NU,              U_NA,              TD(U_TD_U_BASE),   TD(U_TD_U_EXTRA),  TD(U_TD_U_TAP),    TD(U_TD_BOOT),     \
-KC_WH_D,           KC_MS_L,           KC_MS_D,           KC_MS_R,           U_NU,              U_NA,              KC_LSFT,           KC_LCTL,           KC_LALT,           KC_LGUI,           \
+MS_WH_U,           MS_WH_L,           MS_UP,             MS_WH_R,           U_NU,              U_NA,              TD(U_TD_U_BASE),   TD(U_TD_U_EXTRA),  TD(U_TD_U_TAP),    TD(U_TD_BOOT),     \
+MS_WH_D,           MS_LEFT,           MS_DOWN,           MS_RGHT,           U_NU,              U_NA,              KC_LSFT,           KC_LCTL,           KC_LALT,           KC_LGUI,           \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_NA,              TD(U_TD_U_MOUSE),  TD(U_TD_U_SYM),    KC_ALGR,           U_NA,              \
-U_NP,              U_NP,              KC_BTN3,           KC_BTN1,           KC_BTN2,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              MS_BTN3,           MS_BTN1,           MS_BTN2,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_FLIP \
-KC_WH_L,           KC_WH_D,           KC_WH_U,           KC_WH_R,           U_NU,              U_NA,              TD(U_TD_U_BASE),   TD(U_TD_U_EXTRA),  TD(U_TD_U_TAP),    TD(U_TD_BOOT),     \
-KC_MS_L,           KC_MS_D,           KC_MS_U,           KC_MS_R,           U_NU,              U_NA,              KC_LSFT,           KC_LCTL,           KC_LALT,           KC_LGUI,           \
+MS_WH_L,           MS_WH_D,           MS_WH_U,           MS_WH_R,           U_NU,              U_NA,              TD(U_TD_U_BASE),   TD(U_TD_U_EXTRA),  TD(U_TD_U_TAP),    TD(U_TD_BOOT),     \
+MS_LEFT,           MS_DOWN,           MS_UP,             MS_RGHT,           U_NU,              U_NA,              KC_LSFT,           KC_LCTL,           KC_LALT,           KC_LGUI,           \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_NA,              TD(U_TD_U_MOUSE),  TD(U_TD_U_SYM),    KC_ALGR,           U_NA,              \
-U_NP,              U_NP,              KC_BTN3,           KC_BTN1,           KC_BTN2,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              MS_BTN3,           MS_BTN1,           MS_BTN2,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT \
-TD(U_TD_BOOT),     TD(U_TD_U_TAP),    TD(U_TD_U_EXTRA),  TD(U_TD_U_BASE),   U_NA,              U_NU,              KC_WH_L,           KC_MS_U,           KC_WH_R,           KC_WH_U,           \
-KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              U_NU,              KC_MS_L,           KC_MS_D,           KC_MS_R,           KC_WH_D,           \
+TD(U_TD_BOOT),     TD(U_TD_U_TAP),    TD(U_TD_U_EXTRA),  TD(U_TD_U_BASE),   U_NA,              U_NU,              MS_WH_L,           MS_UP,             MS_WH_R,           MS_WH_U,           \
+KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              U_NU,              MS_LEFT,           MS_DOWN,           MS_RGHT,           MS_WH_D,           \
 U_NA,              KC_ALGR,           TD(U_TD_U_SYM),    TD(U_TD_U_MOUSE),  U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              KC_BTN2,           KC_BTN1,           KC_BTN3,           U_NP,              U_NP
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              MS_BTN2,           MS_BTN1,           MS_BTN3,           U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_VI \
 TD(U_TD_BOOT),     TD(U_TD_U_TAP),    TD(U_TD_U_EXTRA),  TD(U_TD_U_BASE),   U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              KC_MS_L,           KC_MS_D,           KC_MS_U,           KC_MS_R,           U_NU,              \
-U_NA,              KC_ALGR,           TD(U_TD_U_SYM),    TD(U_TD_U_MOUSE),  U_NA,              KC_WH_L,           KC_WH_D,           KC_WH_U,           KC_WH_R,           U_NU,              \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              KC_BTN2,           KC_BTN1,           KC_BTN3,           U_NP,              U_NP
+KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              MS_LEFT,           MS_DOWN,           MS_UP,             MS_RGHT,           U_NU,              \
+U_NA,              KC_ALGR,           TD(U_TD_U_SYM),    TD(U_TD_U_MOUSE),  U_NA,              MS_WH_L,           MS_WH_D,           MS_WH_U,           MS_WH_R,           U_NU,              \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              MS_BTN2,           MS_BTN1,           MS_BTN3,           U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE \
 TD(U_TD_BOOT),     TD(U_TD_U_TAP),    TD(U_TD_U_EXTRA),  TD(U_TD_U_BASE),   U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              U_NU,              KC_MS_L,           KC_MS_D,           KC_MS_U,           KC_MS_R,           \
-U_NA,              KC_ALGR,           TD(U_TD_U_SYM),    TD(U_TD_U_MOUSE),  U_NA,              U_NU,              KC_WH_L,           KC_WH_D,           KC_WH_U,           KC_WH_R,           \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              KC_BTN2,           KC_BTN1,           KC_BTN3,           U_NP,              U_NP
+KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              U_NU,              MS_LEFT,           MS_DOWN,           MS_UP,             MS_RGHT,           \
+U_NA,              KC_ALGR,           TD(U_TD_U_SYM),    TD(U_TD_U_MOUSE),  U_NA,              U_NU,              MS_WH_L,           MS_WH_D,           MS_WH_U,           MS_WH_R,           \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              MS_BTN2,           MS_BTN1,           MS_BTN3,           U_NP,              U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP \
@@ -506,4 +482,4 @@ U_NP,              U_NP,              KC_APP,            KC_SPC,            KC_T
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
 KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NU,              U_NU,              KC_LSFT,           KC_LCTL,           KC_LALT,           KC_LGUI,           \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-U_NP,              U_NP,              KC_BTN3,           KC_BTN1,           KC_BTN2,           KC_BTN2,           KC_BTN1,           KC_BTN3,           U_NP,              U_NP
+U_NP,              U_NP,              MS_BTN3,           MS_BTN1,           MS_BTN2,           MS_BTN2,           MS_BTN1,           MS_BTN3,           U_NP,              U_NP
