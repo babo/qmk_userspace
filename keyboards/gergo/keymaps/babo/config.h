@@ -33,6 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define QMK_KEYS_PER_SCAN 4
 
 #define RETRO_TAPPING
+#define USE_I2C
 
 #define LAYOUT_miryoku( \
        K00,   K01,   K02,   K03,   K04,   K05,   K06,   K07,   K08,   K09, \

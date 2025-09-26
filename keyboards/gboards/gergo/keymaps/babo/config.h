@@ -8,6 +8,8 @@
 #undef TAPPING_TERM
 #define TAPPING_TERM 170
 
+#define USE_I2C
+
 #define XXX KC_NO
 
 #define LAYOUT_miryoku(\
