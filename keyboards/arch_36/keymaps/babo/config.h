@@ -1,9 +1,5 @@
 #pragma once
 
-#ifdef OLED_DRIVER_ENABLE
-  #define OLED_DISPLAY_128X64
-#endif
-
 #ifdef RGBLIGHT_ENABLE
   // #define RGBLIGHT_ANIMATIONS
   #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
@@ -31,5 +27,3 @@ LAYOUT_split_3x5_3( \
 
 #define COMBO_VARIABLE_LEN
 #define COMBO_TERM 50
-
-#define UNICODE_SELECTED_MODES UC_MAC, UC_LNX, UC_WINC
