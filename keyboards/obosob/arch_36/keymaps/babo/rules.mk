@@ -1,8 +1,9 @@
 AVR_USE_MINIMAL_PRINTF = yes
-BACKLIGHT_ENABLE = no
+BOOTMAGIC_ENABLE = yes	# Virtual DIP switch configuration(+1000)
 COMMAND_ENABLE = no
 CONSOLE_ENABLE = no
-EXTRAKEY_ENABLE = yes      	# Audio control and System control
-LTO_ENABLE = yes 			# enable link time optimization
-OLED_ENABLE = no
-RGBLIGHT_ENABLE = no      	# Enable keyboard RGB underglow
+EXTRAKEY_ENABLE = yes	# Audio control and System control(+450)
+LTO_ENABLE = yes # enable link time optimization
+MOUSEKEY_ENABLE = yes	# Mouse keys(+4700)
+NKRO_ENABLE = yes		# USB Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
+RGBLIGHT_ENABLE = yes

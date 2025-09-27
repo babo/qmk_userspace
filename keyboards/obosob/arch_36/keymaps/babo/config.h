@@ -1,14 +1,29 @@
 #pragma once
 
-#define LAYOUT_seniply(                                                                  \
-    KEY00, KEY01, KEY02, KEY03, KEY04,               KEY05, KEY06, KEY07, KEY08, KEY09, \
-    KEY10, KEY11, KEY12, KEY13, KEY14,               KEY15, KEY16, KEY17, KEY18, KEY19, \
-    KEY20, KEY21, KEY22, KEY23, KEY24,               KEY25, KEY26, KEY27, KEY28, KEY29, \
-                         KEY30, KEY31,               KEY32, KEY33                       \
-)                                                                                       \
-LAYOUT_split_3x5_3(                                                                     \
-    KEY00, KEY01, KEY02, KEY03, KEY04,               KEY05, KEY06, KEY07, KEY08, KEY09, \
-    KEY10, KEY11, KEY12, KEY13, KEY14,               KEY15, KEY16, KEY17, KEY18, KEY19, \
-    KEY20, KEY21, KEY22, KEY23, KEY24,               KEY25, KEY26, KEY27, KEY28, KEY29, \
-                  KEY30, KEY31, KC_NO,               KC_NO, KEY32, KEY33                \
+#ifdef RGBLIGHT_ENABLE
+  // #define RGBLIGHT_ANIMATIONS
+  #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+  #define RGBLIGHT_HUE_STEP 8
+  #define RGBLIGHT_SAT_STEP 8
+  #define RGBLIGHT_VAL_STEP 8
+#endif
+
+#define LAYOUT_miryoku( \
+       K00,   K01,   K02,   K03,   K04,   K05,   K06,   K07,   K08,   K09, \
+       K10,   K11,   K12,   K13,   K14,   K15,   K16,   K17,   K18,   K19, \
+       K20,   K21,   K22,   K23,   K24,   K25,   K26,   K27,   K28,   K29, \
+       N30,   N31,   K32,   K33,   K34,   K35,   K36,   K37,   N38,   N39 \
+) \
+LAYOUT_split_3x5_3( \
+    K00,   K01,   K02,   K03,   K04,      K05,   K06,   K07,   K08,   K09, \
+    K10,   K11,   K12,   K13,   K14,      K15,   K16,   K17,   K18,   K19, \
+    K20,   K21,   K22,   K23,   K24,      K25,   K26,   K27,   K28,   K29, \
+                  K32,   K33,   K34,      K35,   K36,   K37    \
 )
+
+#undef TAPPING_TERM
+#define TAPPING_TERM 220
+#define PERMISSIVE_HOLD
+
+#define COMBO_VARIABLE_LEN
+#define COMBO_TERM 50
