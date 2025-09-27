@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      KC_X    ,KC_Q    ,KC_M    ,KC_W    ,KC_Z    ,                          KC_K    ,KC_F    ,KC_QUOT,KC_SLSH ,KC_DOT,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
-                                    LT(EXT,KC_TAB), KC_SPC,       KC_LSFT, LT(NUM,KC_ENT)
+                                    KC_SPC,  LT(EXT,KC_TAB),      LT(NUM,KC_ENT), KC_LSFT
   //                                └────────┘   └────────┘       └────────┘   └────────┘
     ),
     [NUM] = LAYOUT_seniply(
