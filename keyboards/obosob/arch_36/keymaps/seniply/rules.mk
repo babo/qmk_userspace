@@ -8,4 +8,4 @@ OLED_ENABLE = no
 RGBLIGHT_ENABLE = no      	# Enable keyboard RGB underglow
 TAP_DANCE_ENABLE = yes      # Enable tapdance
 
-INTROSPECTION_KEYMAP_C += users/babo/seniply.c
+#INTROSPECTION_KEYMAP_C += users/babo/seniply.c
