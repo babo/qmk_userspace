@@ -7,5 +7,5 @@ TAP_DANCE_ENABLE = yes
 
 INTROSPECTION_KEYMAP_C += users/manna-harbour_miryoku/manna-harbour_miryoku.c
 
-include ${PWD}/users/manna-harbour_miryoku/custom_rules.mk
-include ${PWD}/users/manna-harbour_miryoku/post_rules.mk
+include $(QMK_USERSPACE)/users/manna-harbour_miryoku/custom_rules.mk
+include $(QMK_USERSPACE)/users/manna-harbour_miryoku/post_rules.mk
