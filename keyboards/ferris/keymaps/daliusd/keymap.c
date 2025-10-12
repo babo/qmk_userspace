@@ -143,25 +143,25 @@ const uint32_t unicode_map[] PROGMEM = {
     [LT_OB] = 0x201e, // „
     [LT_CB] = 0x201c, // “
 
-    [HU_A_AC] = 0x00C1,
-    [HU_E_AC] = 0x00C9,
-    [HU_I_AC] = 0x00CD,
-    [HU_O_AC] = 0x00D3,
-    [HU_O_DA] = 0x0150,
-    [HU_O_DI] = 0x00D6,
-    [HU_U_AC] = 0x00DA,
-    [HU_U_DA] = 0x0170,
-    [HU_U_DI] = 0x00DC,
+    [HU_A_AC] = 0x00C1, // Á
+    [HU_E_AC] = 0x00C9, // É
+    [HU_I_AC] = 0x00CD, // Í
+    [HU_O_AC] = 0x00D3, // Ó
+    [HU_O_DA] = 0x0150, // Ő
+    [HU_O_DI] = 0x00D6, // Ö
+    [HU_U_AC] = 0x00DA, // Ú
+    [HU_U_DA] = 0x0170, // Ű
+    [HU_U_DI] = 0x00DC, // Ü
 
-    [HU_a_AC] = 0x00E1,
-    [HU_e_AC] = 0x00E9,
-    [HU_i_AC] = 0x00ED,
-    [HU_o_AC] = 0x00F3,
-    [HU_o_DA] = 0x0151,
-    [HU_o_DI] = 0x00F6,
-    [HU_u_AC] = 0x00FA,
-    [HU_u_DA] = 0x0171,
-    [HU_u_DI] = 0x00FC,
+    [HU_a_AC] = 0x00E1, // á
+    [HU_e_AC] = 0x00E9, // é
+    [HU_i_AC] = 0x00ED, // í
+    [HU_o_AC] = 0x00F3, // ó
+    [HU_o_DA] = 0x0151, // ő
+    [HU_o_DI] = 0x00F6, // ö
+    [HU_u_AC] = 0x00FA, // ú
+    [HU_u_DA] = 0x0171, // ű
+    [HU_u_DI] = 0x00FC, // ü
 };
 
 #define K_SNEK      UM(SNEK)
