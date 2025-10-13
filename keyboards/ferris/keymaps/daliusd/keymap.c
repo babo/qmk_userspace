@@ -238,9 +238,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LT_LINUX] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX, XXXXXXX ,XXXXXXX ,XXXXXXX ,
+     XXXXXXX ,HU_ODA  ,HU_UDA  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX, HU_OAC  ,HU_UAC  ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX  ,                         XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
+     XXXXXXX ,HU_ODI  ,HU_UDI  ,XXXXXXX ,XXXXXXX  ,                         XXXXXXX ,XXXXXXX ,HU_AAC  ,HU_EAC  ,HU_IAC  ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,KC_BSPC ,XXXXXXX ,K_SNEK  ,XXXXXXX ,                          XXXXXXX ,K_EURO  ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
