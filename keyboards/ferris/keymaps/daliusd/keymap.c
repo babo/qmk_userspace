@@ -79,26 +79,6 @@ const uint16_t flow_layers_config[FLOW_LAYERS_COUNT][2] = {
 enum unicode_names {
     SNEK,
     EURO,
-    LT_S_A,
-    LT_L_A,
-    LT_S_C,
-    LT_L_C,
-    LT_S_E1,
-    LT_L_E1,
-    LT_S_E2,
-    LT_L_E2,
-    LT_S_I,
-    LT_L_I,
-    LT_S_S,
-    LT_L_S,
-    LT_S_U1,
-    LT_L_U1,
-    LT_S_U2,
-    LT_L_U2,
-    LT_S_Z,
-    LT_L_Z,
-    LT_OB,
-    LT_CB,
     HU_A_AC,
     HU_E_AC,
     HU_I_AC,
@@ -122,26 +102,6 @@ enum unicode_names {
 const uint32_t unicode_map[] PROGMEM = {
     [SNEK]  = 0x1F40D, // 🐍
     [EURO]  = 0x20ac, // €
-    [LT_S_A] = 0x105, // ą
-    [LT_L_A] = 0x104, // Ą
-    [LT_S_C] = 0x10d, // č
-    [LT_L_C] = 0x10c, // Č
-    [LT_S_E1] = 0x119, // ę
-    [LT_L_E1] = 0x118, // Ę
-    [LT_S_E2] = 0x117, // ė
-    [LT_L_E2] = 0x116, // Ė
-    [LT_S_I] = 0x12f, // į
-    [LT_L_I] = 0x12e, // Į
-    [LT_S_S] = 0x161, // š
-    [LT_L_S] = 0x160, // Š
-    [LT_S_U1] = 0x173, // ų
-    [LT_L_U1] = 0x172, // Ų
-    [LT_S_U2] = 0x16b, // ū
-    [LT_L_U2] = 0x16a, // Ū
-    [LT_S_Z] = 0x17e, // ž
-    [LT_L_Z] = 0x17d, // Ž
-    [LT_OB] = 0x201e, // „
-    [LT_CB] = 0x201c, // “
 
     [HU_A_AC] = 0x00C1, // Á
     [HU_E_AC] = 0x00C9, // É
@@ -166,26 +126,6 @@ const uint32_t unicode_map[] PROGMEM = {
 
 #define K_SNEK      UM(SNEK)
 #define K_EURO      UM(EURO)
-#define K_LT_A      UP(LT_S_A, LT_L_A)
-#define K_LT_AU     UM(LT_L_A)
-#define K_LT_C      UP(LT_S_C, LT_L_C)
-#define K_LT_CU     UM(LT_L_C)
-#define K_LT_E1     UP(LT_S_E1, LT_L_E1)
-#define K_LT_E1U    UM(LT_L_E1)
-#define K_LT_E2     UP(LT_S_E2, LT_L_E2)
-#define K_LT_E2U    UM(LT_L_E2)
-#define K_LT_I      UP(LT_S_I, LT_L_I)
-#define K_LT_IU     UM(LT_L_I)
-#define K_LT_S      UP(LT_S_S, LT_L_S)
-#define K_LT_SU     UM(LT_L_S)
-#define K_LT_U1     UP(LT_S_U1, LT_L_U1)
-#define K_LT_U1U    UM(LT_L_U1)
-#define K_LT_U2     UP(LT_S_U2, LT_L_U2)
-#define K_LT_U2U    UM(LT_L_U2)
-#define K_LT_Z      UP(LT_S_Z, LT_L_Z)
-#define K_LT_ZU     UM(LT_L_Z)
-#define K_LT_OB     UM(LT_OB)
-#define K_LT_CB     UM(LT_CB)
 
 #define HU_AAC      UP(HU_a_AC, HU_A_AC)
 #define HU_EAC      UP(HU_e_AC, HU_E_AC)
@@ -298,11 +238,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LT_LINUX] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     K_LT_AU ,K_LT_CU ,K_LT_E1U,K_LT_E2U,K_LT_IU ,                          K_LT_SU ,K_LT_U1U,K_LT_U2U,K_LT_ZU ,XXXXXXX ,
+     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX, XXXXXXX ,XXXXXXX ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     K_LT_A  ,K_LT_C  ,K_LT_E1 ,K_LT_E2 ,K_LT_I  ,                          K_LT_S  ,K_LT_U1 ,K_LT_U2 ,K_LT_Z  ,XXXXXXX ,
+     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX  ,                         XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,KC_BSPC ,XXXXXXX ,K_SNEK  ,K_LT_OB ,                          K_LT_CB ,K_EURO  ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
+     XXXXXXX ,KC_BSPC ,XXXXXXX ,K_SNEK  ,XXXXXXX ,                          XXXXXXX ,K_EURO  ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
                                      XXXXXXX ,    XXXXXXX ,        _______ ,    XXXXXXX
   //                                └────────┘   └────────┘       └────────┘   └────────┘
