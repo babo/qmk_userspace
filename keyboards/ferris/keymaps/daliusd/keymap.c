@@ -26,26 +26,16 @@ enum layers {
     _SYM,
     _NAV,
     _MISC,
-    _TMUX,
+    _HUN,
     _MOUSE,
     _FUNC,
     _LT_MAC,
-    _LT_LINUX,
 };
 
 enum custom_keycodes {
-  TM_NEXT = SAFE_RANGE,
-  TM_PREV,
-  TM_LEFT,
-  TM_RIGHT,
-  TM_NEW,
-  TM_SLCT,
-  TM_SRCH,
-  TM_URL,
-  OS_MISC,
-  OS_TMUX,
+  OS_MISC = SAFE_RANGE,
+  OS_HUN,
   OS_FUNC,
-  LT_OSLNX,
 };
 
 // Shortcut to make keymap more readable
@@ -71,7 +61,7 @@ const uint16_t flow_config[FLOW_COUNT][2] = {
 
 const uint16_t flow_layers_config[FLOW_LAYERS_COUNT][2] = {
     {OS_MISC, _MISC},
-    {OS_TMUX, _TMUX},
+    {OS_HUN, _HUN},
     {OS_FUNC, _FUNC},
 };
 
@@ -170,7 +160,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      KC_LALT ,KC_LGUI ,KC_LCTL ,KC_TAB  ,KC_ENT  ,                          KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RIGHT,KC_PGUP ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,KC_BSPC ,KC_ESC  ,KC_TILDE,OS_TMUX ,                          OS_FUNC ,L_MOUSE ,KC_COMM ,KC_DOT  ,KC_PGDN ,
+     KC_LSFT ,KC_BSPC ,KC_ESC  ,KC_TILDE,OS_HUN ,                          OS_FUNC ,L_MOUSE ,KC_COMM ,KC_DOT  ,KC_PGDN ,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
                                      XXXXXXX ,    _______ ,        _______ ,    _______
   //                                └────────┘   └────────┘       └────────┘   └────────┘
@@ -180,7 +170,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
      QK_BOOT ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          KC_BRID ,KC_BRIU ,KC_PSCR ,XXXXXXX ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,XXXXXXX ,DB_TOGG ,LT_OSLNX,XXXXXXX ,                          KC_MPRV ,KC_MPLY ,KC_MNXT ,XXXXXXX ,XXXXXXX ,
+     XXXXXXX ,XXXXXXX ,DB_TOGG ,XXXXXXX ,XXXXXXX ,                          KC_MPRV ,KC_MPLY ,KC_MNXT ,XXXXXXX ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          KC_VOLD ,KC_VOLU ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
@@ -188,15 +178,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                                └────────┘   └────────┘       └────────┘   └────────┘
   ),
 
-  [_TMUX] = LAYOUT(
+  [_HUN] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,TM_URL  ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
+     XXXXXXX ,HU_ODA  ,HU_UDA  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX, HU_OAC  ,HU_UAC  ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          TM_LEFT ,TM_NEXT ,TM_PREV ,TM_RIGHT,XXXXXXX ,
+     XXXXXXX ,HU_ODI  ,HU_UDI  ,XXXXXXX ,XXXXXXX  ,                         XXXXXXX ,XXXXXXX ,HU_AAC  ,HU_EAC  ,HU_IAC  ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          TM_NEW  ,TM_SLCT ,XXXXXXX ,XXXXXXX ,TM_SRCH ,
+     XXXXXXX ,KC_BSPC ,XXXXXXX ,K_SNEK  ,XXXXXXX ,                          XXXXXXX ,K_EURO  ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
   //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
-                                     XXXXXXX ,    XXXXXXX ,        XXXXXXX ,    XXXXXXX
+                                     XXXXXXX ,    XXXXXXX ,        _______ ,    XXXXXXX
   //                                └────────┘   └────────┘       └────────┘   └────────┘
   ),
 
@@ -226,18 +216,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LT_MAC] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
-     KC_EXLM ,KC_AT   ,KC_HASH ,KC_DLR  ,KC_PERC ,                          KC_CIRC ,KC_AMPR ,KC_ASTR ,KC_PLUS ,XXXXXXX ,
-  //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                          KC_6    ,KC_7    ,KC_8    ,KC_EQL  ,XXXXXXX ,
-  //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,KC_BSPC ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
-  //└────────┴────────┴────────┴────┬───┴────┬───┼────────┐       ┌────────┼───┬────┴───┬────┴────────┴────────┴────────┘
-                                     XXXXXXX ,    XXXXXXX ,        _______ ,    XXXXXXX
-  //                                └────────┘   └────────┘       └────────┘   └────────┘
-  ),
-
-  [_LT_LINUX] = LAYOUT(
-  //┌────────┬────────┬────────┬────────┬────────┐                         ┌────────┬────────┬────────┬────────┬────────┐
      XXXXXXX ,HU_ODA  ,HU_UDA  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX, HU_OAC  ,HU_UAC  ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,HU_ODI  ,HU_UDI  ,XXXXXXX ,XXXXXXX  ,                         XXXXXXX ,XXXXXXX ,HU_AAC  ,HU_EAC  ,HU_IAC  ,
@@ -249,51 +227,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 
-#define TMUX_PREFIX SS_DOWN(X_LCTL) "b" SS_UP(X_LCTL)
-
-bool lt_os_is_linux = false;
-
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (!update_flow(keycode, record->event.pressed, record->event.key)) return false;
 
-    switch (keycode) {
-        case TM_LEFT:
-            if (!record->event.pressed) return true;
-            SEND_STRING(TMUX_PREFIX "<");
-            return false;
-        case TM_RIGHT:
-            if (!record->event.pressed) return true;
-            SEND_STRING(TMUX_PREFIX ">");
-            return false;
-        case TM_NEXT:
-            if (!record->event.pressed) return true;
-            SEND_STRING(TMUX_PREFIX "n");
-            return false;
-        case TM_PREV:
-            if (!record->event.pressed) return true;
-            SEND_STRING(TMUX_PREFIX "p");
-            return false;
-        case TM_NEW:
-            if (!record->event.pressed) return true;
-            SEND_STRING(TMUX_PREFIX "c");
-            return false;
-        case TM_SLCT:
-            if (!record->event.pressed) return true;
-            SEND_STRING(TMUX_PREFIX "[");
-            return false;
-        case TM_SRCH:
-            if (!record->event.pressed) return true;
-            SEND_STRING(TMUX_PREFIX "\t");
-            return false;
-        case TM_URL:
-            if (!record->event.pressed) return true;
-            SEND_STRING(TMUX_PREFIX SS_LCTL("u"));
-            return false;
-        case LT_OSLNX:
-            if (!record->event.pressed) return true;
-            lt_os_is_linux = !lt_os_is_linux;
-            return false;
-    }
     return true;
 }
 
@@ -301,23 +237,6 @@ void matrix_scan_user(void) {
     flow_matrix_scan();
 }
 
-bool lang_layer_on = false;
-
 layer_state_t layer_state_set_user(layer_state_t state) {
-    state = update_tri_layer_state(state, _SYM, _NAV, lt_os_is_linux ? _LT_LINUX : _LT_MAC);
-
-    uint8_t hl = get_highest_layer(state);
-    if (hl == _LT_MAC) {
-        if (!lang_layer_on) {
-            tap_code16(LCTL(KC_SPC));
-            lang_layer_on = true;
-        }
-    } else {
-        if (lang_layer_on) {
-            tap_code16(LCTL(KC_SPC));
-            lang_layer_on = false;
-        }
-    }
-
-    return state;
+   return update_tri_layer_state(state, _SYM, _NAV, _LT_MAC);
 }
