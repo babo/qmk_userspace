@@ -33,3 +33,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define FLOW_COUNT 6
 #define FLOW_LAYERS_COUNT 3
+#define FLOW_ONESHOT_TERM 600
+#define FLOW_ONESHOT_WAIT_TERM 600
