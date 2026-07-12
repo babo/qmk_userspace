@@ -1,4 +1,6 @@
+ifneq ($(strip $(KEYBOARD)), crkbd/rev4_1/standard)
 BOOTLOADER = qmk-dfu
+endif
 BOOTMAGIC_ENABLE = yes	# Virtual DIP switch configuration(+1000)
 EXTRAKEY_ENABLE = yes	# Audio control and System control(+450)
 MOUSEKEY_ENABLE = yes	# Mouse keys(+4700)
