@@ -2,6 +2,8 @@
 
 #pragma once
 
+#define UNICODE_SELECTED_MODES UNICODE_MODE_MACOS, UNICODE_MODE_LINUX, UNICODE_MODE_WINCOMPOSE
+
 #define EE_HANDS
 
 // default but important
@@ -18,10 +20,10 @@
        N30,   N31,   K32,   K33,   K34,   K35,   K36,   K37,   N38,   N39 \
 ) \
 LAYOUT_split_3x6_3_ex2( \
-DT_PRNT, K00,   K01,   K02,   K03,   K04,   KC_NO,   KC_NO, K05,   K06,   K07,   K08,   K09,   DT_UP,  \
-KC_LSFT, K10,   K11,   K12,   K13,   K14,   KC_NO,   KC_NO, K15,   K16,   K17,   K18,   K19,   KC_RSFT, \
-KC_NO,   K20,   K21,   K22,   K23,   K24,                   K25,   K26,   K27,   K28,   K29,   DT_DOWN, \
-                       K32,   K33,   K34,                   K35,   K36,   K37 \
+IAC, K00,   K01,   K02,   K03,   K04,   ODI,   ODA, K05,   K06,   K07,   K08,   K09,   AAC,  \
+UAC, K10,   K11,   K12,   K13,   K14,   UDI,   UDA, K15,   K16,   K17,   K18,   K19,   UAC, \
+OAC, K20,   K21,   K22,   K23,   K24,               K25,   K26,   K27,   K28,   K29,   EAC, \
+                   K32,   K33,   K34,               K35,   K36,   K37 \
 )
 #else
 #define LAYOUT_miryoku( \

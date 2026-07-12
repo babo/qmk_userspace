@@ -4,3 +4,8 @@ MOUSEKEY_ENABLE = yes	# Mouse keys(+4700)
 NKRO_ENABLE = no		# USB Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 RGBLIGHT_ENABLE = no
 DYNAMIC_TAPPING_TERM_ENABLE = yes
+
+UNICODE_COMMON = yes
+UNICODEMAP_ENABLE = yes
+
+SRC += hungarian.c
